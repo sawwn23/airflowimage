@@ -1,4 +1,4 @@
-FROM apache/airflow:latest
+FROM apache/airflow:2.0.0
 RUN pip install --user papermill jupyterlab seaborn boto3 nbconvert
 RUN pip3 install --user -U click pymisp pysocks
 # RUN python -c “import black; black.CACHE_DIR.mkdir(parents=True, exist_ok=True)”
